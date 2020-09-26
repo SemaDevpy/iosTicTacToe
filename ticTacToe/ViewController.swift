@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var myButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let grey = UIColor(red:0.32, green: 0.34, blue: 0.36, alpha: 1.0)
+        myButton.layer.borderColor = grey.cgColor
+        myButton.layer.borderWidth = 2.0
     }
-
-
+    
+    
 }
 
